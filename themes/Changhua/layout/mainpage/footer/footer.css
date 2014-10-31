@@ -1,0 +1,19 @@
+#footer_img{
+	width: 1025px;
+	height:164px;
+	margin:0 center;
+	padding-top:30px;
+}
+
+.cata{	
+	width:200px;
+	margin-left:20px;
+	text-align:center;
+	font-size:16pt;
+	color:#9cb05a;
+	font-weight:bold;
+}
+
+.cata a{
+	color:#9cb05a;
+}

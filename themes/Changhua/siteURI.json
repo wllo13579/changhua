@@ -1,0 +1,43 @@
+{
+    "/index": {
+        "id": "no",
+		"title":"彰化百寶村"
+    },
+    "/about": {
+        "id": "no",
+		"service":"/changhua/changhua/view/63493"
+    },
+    "/news": {
+        "id": "no"
+    },
+    "/product": {
+        "id": "no"
+    },
+    "/food": {
+        "id": "no"
+    },
+    "/food_buy": {
+        "id": "no"
+    },
+    "/life": {
+        "id": "no"
+    },
+    "/life_buy": {
+        "id": "no"
+    },
+    "/culture": {
+        "id": "no"
+    },
+    "/culture_buy": {
+        "id": "no"
+    },
+    "/top_select": {
+        "id": "no"
+    },
+    "/fun": {
+        "id": "no"
+    },
+    "/scenery": {
+        "id": "no"
+    }
+}

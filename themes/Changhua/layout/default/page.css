@@ -1,0 +1,37 @@
+/* Add css rules here that are valid for the whole page */
+body{
+	background-image:url('../../Changhua/bg.jpg');
+	background-repeat: no-repeat;
+	background-position:center top;
+}
+#pgContainer {
+	margin: 0px auto;
+	width: 960px;
+	height: 1760px;
+}
+#pgHead {
+	margin: 30px auto;
+	width: 960px;
+	height:400px;
+}
+#pgLeft {
+	margin-top:60px;
+	float: left;
+	width: 240px;
+}
+
+#pgContent {
+	margin-top:60px;
+	margin-left: 220px;
+	height: 1000px;
+	background:rgba(255%,255%,255%,0.8);
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	box-shadow:3px 3px 15px 3px #999;
+}
+
+#pgFooter {
+	margin-top:140px;
+	clear: both;
+}

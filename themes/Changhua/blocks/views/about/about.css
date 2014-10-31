@@ -1,0 +1,93 @@
+::-webkit-scrollbar {
+  width: 26px;
+  }
+
+::-webkit-scrollbar-track-piece {
+	background-image: url(../../Changhua/track.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+  }
+
+::-webkit-scrollbar-thumb:vertical {
+	height: 50px;
+	background-image: url(../../Changhua/scroll.png);
+	background-repeat:no-repeat;
+	background-position:top center;
+ }
+
+::-webkit-scrollbar-thumb:horizontal {
+	background-image: url(../../Changhua/scroll.png);
+	background-repeat:no-repeat;
+
+}
+
+#content_all{
+	float:left;
+	width: 700px;
+	height: 960px;	
+	position:relative;
+	top:20px;
+	border:1px solid #000;
+	border-radius:15px;
+
+
+}
+
+.content_scroll{
+	float:left;
+ 	width: 680px;
+	height: 940px;	
+	position:relative;
+ 	overflow-x:hidden;
+	overflow-y:scroll;
+}
+
+#title{
+	padding-top:40px;
+	padding-left:50px;
+	width:200px;
+	height:70px;
+	background-image:url('../../Changhua/line.png');
+	background-position:35px 35px;
+	background-repeat:no-repeat;
+}
+
+ #content{
+	padding-top:10px;
+	padding-left:30px;
+	padding-right:90px;
+
+} 
+
+#memo{
+	float:right;
+	position:relative;
+	bottom:250px;
+	left:255px;
+	z-index:3;
+
+}
+
+#memo img{
+	width:267px;
+	height:350px;
+}
+
+#memo_content{
+	width:260px;
+	font-size:9pt;
+	line-height:13pt;
+	text-align:center;
+	float:right;
+	position:relative;
+	right:4px;
+	bottom:137px;
+	z-index:4;
+
+}
+
+.blank{
+	width:10px;
+	height:40px;
+
+}

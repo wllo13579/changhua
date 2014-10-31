@@ -1,0 +1,24 @@
+/* Add css rules here that are valid for the whole page */
+body{
+
+}
+#pgContainer {
+	margin: 0px auto;
+	width: 1025px;
+	height: 993px;
+}
+#pgHead {
+	background-image:url('../../Changhua/index/index_bg.jpg');
+	background-repeat: no-repeat;
+	background-position:top top;
+	margin: 0px auto;
+	width: 1025px;
+	height:829px;
+}
+
+#pgFooter {
+	background-image:url('../../Changhua/index/lines.png');
+	background-repeat: repeat-y;
+	height:164px;
+	width: 1025px;
+}

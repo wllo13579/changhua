@@ -1,0 +1,69 @@
+<script type='text/javascript'>
+function toggleMenu( id )
+{
+  var o=document.getElementById( id );
+  o.style.display=
+    (o.style.display=='none') ? 'inline' : 'none';
+
+}
+function bg( id )
+{
+  var dom = document.getElementById(id);
+  dom.style.backgroundImage =
+	(dom.style.backgroundImage=='') ? 'url(../../Changhua/cata/slider_hover.png)' : '';
+}
+hideMenu('menus');
+
+
+</script>
+
+<div id='menus'>
+	<div class="cata_master" id="cata1"><span onclick='toggleMenu("m1");bg("cata1")'><img src ='../../Changhua/cata/icon1.png'><img src ='../../Changhua/cata/sub1.png'></span>
+	</div>
+	<div class="cata_sub" id="m1" style="display: none;">
+		<div class="one" id="sub_cata">
+			<div class="item"><a href="about"><img src ='../../Changhua/cata/indroduce.png'></a></div>
+		</div>
+	</div>
+	
+	<div class="cata_master" id="cata2"><span onclick='toggleMenu("m2");bg("cata2")'><img src ='../../Changhua/cata/icon2.png'><img src ='../../Changhua/cata/sub5.png'></span>
+	</div>
+	<div class="cata_sub" id="m2" style="display: none;">
+		<div class="two" id="sub_cata">
+			<div class="item"><a href="news"><img src ='../../Changhua/cata/news.png'></a></div>
+			<div class="item"><a href="product"><img src ='../../Changhua/cata/title22.png'></a></div>
+		</div>
+	</div>
+	
+	
+	<div class="cata_master" id="cata3"><span onclick='toggleMenu("m3");bg("cata3")'><img src ='../../Changhua/cata/icon3.png'><img src ='../../Changhua/cata/sub3.png'></span>
+	</div>
+	<div class="cata_sub" id="m3" style="display: none;">
+		<div class="three" id="sub_cata">
+			<div class="item"><a href="food"><img src ='../../Changhua/cata/specialty.png'></a></div>
+			<div class="item"><a href="life"><img src ='../../Changhua/cata/life.png'></a></div>
+			<div class="item"><a href="culture"><img src ='../../Changhua/cata/culture.png'></a></div>
+		</div>
+	</div>
+	
+	<div class="cata_master" id="cata4"><span onclick='toggleMenu("m4");bg("cata4")'><img src ='../../Changhua/cata/icon4.png'><img src ='../../Changhua/cata/sub4.png'></span>
+	</div>
+	<div class="cata_sub" id="m4" style="display: none;">
+		<div class="one" id="sub_cata">
+			<div class="item"><a href="top_select"><img src ='../../Changhua/cata/mainstar.png'></a></div>
+		</div>
+	</div>
+	
+	<div class="cata_master" id="cata5"><span onclick='toggleMenu("m5");bg("cata5")'><img src ='../../Changhua/cata/icon5.png'><img src ='../../Changhua/cata/sub2.png'></span>
+	</div>
+	<div class="cata_sub" id="m5" style="display: none;">
+		<div class="two" id="sub_cata">
+			<div class="item"><a href="fun"><img src ='../../Changhua/cata/run.png'></a></div>
+			<div class="item"><a href="scenery"><img src ='../../Changhua/cata/viewpoint.png'></a></div>
+		</div>
+	</div>
+	
+	<div class="cata_shop" id="cata6"><a href="http://www.google.com" target="_blank"><img src ='../../Changhua/cata/yahoo.png'></a></div>
+		
+</div>
+

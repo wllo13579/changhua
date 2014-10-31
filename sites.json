@@ -1,0 +1,25 @@
+{
+    "x-127.0.0.1": {
+        "caCode": "littlefoxwenny",
+        "title": "[MetaData] WebSite",
+        "validFrom": "",
+        "validTo": "",
+        "locale": "en",
+        "home": "/index",
+        "theme": "MetaData",
+        "appKeys": {
+            "littlefoxwenny": "d672766c-63a5-3003-6f7a-87664ec2b520"
+        }
+    },
+    "127.0.0.1": {
+        "caCode": "changhua",
+        "title": "[Changhua] WebSite",
+        "validFrom": "",
+        "validTo": "",
+        "locale": "zh",
+        "home": "/index",
+		"appKeys":{
+			"changhua":"d627b553-2dca-aa1f-1e9b-00e02430ad37"
+		}
+    }
+}
