@@ -8,36 +8,44 @@
 		"service":"/changhua/changhua/view/63493"
     },
     "/news": {
-        "id": "no"
+        "id": "no",
+		"service":"/changhua/changhua/view/63894"
     },
     "/product": {
-        "id": "no"
+        "id": "no",
+		"service":"/changhua/changhua/view/63890"
     },
     "/food": {
-        "id": "no"
+        "id": "no",
+		"service":"/changhua/changhua/view/63895"
     },
     "/food_buy": {
         "id": "no"
     },
     "/life": {
-        "id": "no"
+        "id": "no",
+		"service":"/changhua/changhua/view/63897"
     },
     "/life_buy": {
         "id": "no"
     },
     "/culture": {
-        "id": "no"
+        "id": "no",
+		"service":"/changhua/changhua/view/63896"
     },
     "/culture_buy": {
         "id": "no"
     },
     "/top_select": {
-        "id": "no"
+		"id": "no",
+		"service":"/changhua/changhua/view/63893"
     },
     "/fun": {
-        "id": "no"
+		"id": "no",
+		"service":"/changhua/changhua/view/63892"
     },
     "/scenery": {
-        "id": "no"
+		"id": "no",
+		"service":"/changhua/changhua/view/63891"
     }
 }

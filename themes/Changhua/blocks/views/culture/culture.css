@@ -1,3 +1,26 @@
+::-webkit-scrollbar {
+  width: 26px;
+  }
+
+::-webkit-scrollbar-track-piece {
+	background-image: url(../../Changhua/track.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+  }
+
+::-webkit-scrollbar-thumb:vertical {
+	height: 50px;
+	background-image: url(../../Changhua/scroll.png);
+	background-repeat:no-repeat;
+	background-position:top center;
+ }
+
+::-webkit-scrollbar-thumb:horizontal {
+	background-image: url(../../Changhua/scroll.png);
+	background-repeat:no-repeat;
+
+}
+
 #content_all{
 	float:left;
 	width: 700px;
@@ -17,4 +40,67 @@
 	position:relative;
  	overflow-x:hidden;
 	overflow-y:scroll;
+}
+
+#title{
+	padding-top:40px;
+	padding-left:50px;
+	width:200px;
+	height:70px;
+	background-image:url('../../Changhua/line.png');
+	background-position:35px 35px;
+	background-repeat:no-repeat;
+}
+
+ #content{
+	padding-top:10px;
+	padding-left:20px;
+	padding-right:10px;
+
+} 
+
+.item{
+	float:left;
+	width:145px
+	height:200px;
+	padding-left:10px;
+
+
+}
+
+.item_pic {
+	width:145px
+	height:150px;
+	text-align:center;
+
+}
+
+.item_pic img{
+	width:145px;
+	height:145px;
+	border-radius: 50%;	
+    border:3px solid #fff;
+	margin-top:60px;
+	
+	filter:alpa(opacity=50);   /* old IE */
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=50,FinishOpacity=15, Style=3, StartX=0, FinishX=100, StartY=0,FinishY=16); /*supported by current IE*/
+	-moz-opacity:0.5;          /* Moz + FF */
+	opacity:0.5;
+
+}
+
+.item_pic img:hover{
+	filter:alpa(opacity=100);   /* old IE */
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100,FinishOpacity=15, Style=3, StartX=0, FinishX=100, StartY=0,FinishY=16); /*supported by current IE*/
+	-moz-opacity:1;          /* Moz + FF */
+	opacity:1;
+	
+
+}
+
+.item_title {
+	width:145px;
+	height:50px;
+	text-align:center;
+	padding-top:5px;
 }
