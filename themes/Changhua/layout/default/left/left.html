@@ -1,23 +1,58 @@
 <script type='text/javascript'>
 function toggleMenu( id )
 {
-  var o=document.getElementById( id );
-  o.style.display=
-    (o.style.display=='none') ? 'inline' : 'none';
+	var pages = new Array('m1', 'm2', 'm3','m4','m5');
+	
+  for(var key in pages){
+	var temp;
+	var display;
+	var o=document.getElementById( pages[key] );
+	display = o.style.display;
+	if(id == pages[key])
+		{  
+			temp=(display=='none') ? 'inline' : 'none';
+			
+		}
+	else
+		{
+			temp='none';
+		
+		}
+	
+	o.style.display = temp;  
+  }
+  
 
 }
 function bg( id )
 {
-  var dom = document.getElementById(id);
-  dom.style.backgroundImage =
-	(dom.style.backgroundImage=='') ? 'url(../../Changhua/cata/slider_hover.png)' : '';
+	var pages = new Array('cata1', 'cata2', 'cata3','cata4','cata5');
+	
+	for(var key in pages){
+	var temp;
+	var display;
+	var dom = document.getElementById( pages[key] );
+	display = dom.style.backgroundImage;
+	if(id == pages[key])
+		{  
+			temp=(display=='') ? 'url(../../Changhua/cata/slider_hover.png)' : '';
+			
+		}
+	else
+		{
+			temp='';
+		
+		}
+	
+	dom.style.backgroundImage = temp;  
+  }
+	
+
 }
-hideMenu('menus');
 
 function change_page(id){
 
       $("#pgContent").load(id+'.html #content_all'); 
-	  $("#pgContent").load(id+'.css');
     }
 
 
