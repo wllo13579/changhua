@@ -14,6 +14,14 @@
 	z-index:1;
 }
 
+.cata_master a{	
+	height:80px;
+	width:240px;
+
+}
+
+.cata_master a h1{    display: none;}
+
 .cata_master:hover{
 	background-image:url('../../Changhua/cata/slider_hover.png');
 	}
