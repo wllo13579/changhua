@@ -1,51 +1,60 @@
 {
     "/index": {
         "id": "no",
-		"title":"彰化百寶村"
+        "title": "彰化百寶村"
     },
     "/about": {
         "id": "no",
-		"service":"/changhua/changhua/view/63493"
+        "service": "/changhua/changhua/view/63493"
     },
     "/news": {
         "id": "no",
-		"service":"/changhua/changhua/view/63894"
+        "service": "/changhua/changhua/view/63894"
     },
     "/product": {
         "id": "no",
-		"service":"/changhua/changhua/view/63890"
+        "service": "/changhua/changhua/view/63890"
     },
     "/food": {
         "id": "no",
-		"service":"/changhua/changhua/view/63895"
+        "service": "/changhua/changhua/view/63895"
     },
     "/food_buy": {
         "id": "no"
     },
     "/life": {
         "id": "no",
-		"service":"/changhua/changhua/view/63897"
+        "service": "/changhua/changhua/view/63897"
     },
     "/life_buy": {
         "id": "no"
     },
     "/culture": {
         "id": "no",
-		"service":"/changhua/changhua/view/63896"
+        "service": "/changhua/changhua/view/63896"
     },
     "/culture_buy": {
         "id": "no"
     },
     "/top_select": {
-		"id": "no",
-		"service":"/changhua/changhua/view/63893"
+        "id": "no",
+        "service": "/changhua/changhua/view/63893"
     },
     "/fun": {
-		"id": "no",
-		"service":"/changhua/changhua/view/63892"
+        "id": "no",
+        "service": "/changhua/changhua/view/63892"
     },
     "/scenery": {
-		"id": "no",
-		"service":"/changhua/changhua/view/63891"
+        "id": "no",
+        "service": "/changhua/changhua/view/63891"
+    },
+    "/backstage": {
+        "id": "no"
+    },
+	"/backstage/news": {
+        "id": "no"
+    },
+	"/backstage/login": {
+        "id": "no"
     }
 }

@@ -135,24 +135,11 @@
 	position:relative;  
 	top:25px; 
 	text-align:center;
-	position:relative;
-	right:5px;
+
 }
 
 .item:hover{
 	background-image:url('../../Changhua/cata/dropdown_hover.png');
 	background-repeat: no-repeat;
 	background-position:center -30px;
-}
-
-.under{
-	width: 151px;
-	height : 3px;
-	background-image:url('../../Changhua/sub_line.png');
-	background-repeat: no-repeat;
-	background-position:center center;
-	position:relative;
-	left:15px;
-	top:15px;
-
 }

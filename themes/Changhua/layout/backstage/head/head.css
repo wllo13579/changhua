@@ -1,0 +1,50 @@
+
+#abgneBlock {
+	width: 930px;
+	height: 310px;
+	position: relative;
+	overflow: hidden;
+	border: 0px solid #ccc;	
+	left:15px;
+	margin-top:15px;
+
+}
+#abgneBlock ul.list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: absolute;
+	width: 99999px;
+	height: 279px;
+
+}
+#abgneBlock ul.list li {
+	float: left;
+	width: 930px;
+	height: 279px;
+}
+#abgneBlock .list img{
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+#abgneBlock ul.playerControl {
+	margin-top: 10px;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	top: 280px;
+	height: 20px;
+}
+#abgneBlock ul.playerControl li {
+	float: left;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	margin: 0px 2px;
+	background: url('../../Changhua/cir.png') -20px 0;
+}
+#abgneBlock ul.playerControl li.current { 
+	background-position: 0 0;
+}
+
