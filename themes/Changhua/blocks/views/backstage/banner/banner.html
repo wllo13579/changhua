@@ -1,0 +1,60 @@
+<script>
+function pic_delete(cnID) {
+      var req = {url: 'changhua/changhua/changhua/unattach/'+cnID, hasCA: true};
+    __.api(req, function(data) {
+      if (data.errCode === 0) {
+        alert('刪除成功!');
+		window.location.reload();
+      } else {
+        alert( data.message );
+      }
+    });
+}
+
+
+$('#pic_path').submit(doUpload);
+var	doUpload= function(e) {
+	var settings= {
+    url: getCA()+'/'+getSrvPath()+'attach/65327',
+    type: 'POST',
+    processData: false,
+    contentType: false,
+    success: function() {
+      alert("ya");
+    },
+    error: function(err) {
+      alert(JSON.stringify(err));
+    }};
+    e.preventDefault();
+    e.stopPropagation();
+
+    settings['data'] = new FormData(e.target);
+    $.ajax(settings);
+  }
+function getSrvPath() {
+    return  getNGAttr('srv');
+};
+function getCA() {
+    return  getNGAttr('ca');
+};
+</script>
+<div id="title"> Banner圖片輪播 </div>
+<div id="main">
+<table>
+<% value.list.forEach(function(item) {%>
+<tr>
+<td><input type='button' value='刪除' onclick="pic_delete('<%= item.cnID%>')" ></td>
+<td>
+<img src='/images/64407?path=<%= item.dataURI%>&maxw=500' id='<%= item.cnID%>'><br><br>
+</td>
+</tr>
+<%})%>
+
+</table>
+<form id="pic_path" action="" enctype="multipart/form-data" method="POST" style="text-align:left">
+新增圖片：<input id="file" type="file" >
+<input type="hidden" name="nType" value="3" >
+<input type="hidden" name="hasCA" value="1" >
+<input value="確定上傳"  type="submit">
+</form>
+</div>

@@ -8,18 +8,15 @@
 	position : relative;
 	right:35px;
 	padding-left:30px;
+	padding-top:5px;
+	margin-top:10px;
 	vertical-align : middle;
 	z-index:1;
-	
 }
 
 .cata_master a{	
 	height:80px;
 	width:240px;
-	line-height :80px;
-	color:#000;
-	font-size:16pt;
-	text-align:center;
 
 }
 
@@ -33,6 +30,28 @@
 	text-decoration:none;
 	}	
 	
+.cata_shop{	
+	width: 240px;
+	height : 80px;
+	line-height : 80px;
+	background-image:url('../../Changhua/cata/slider.png');
+	background-repeat: no-repeat;
+	background-position:right center;
+	position : relative;
+	right:35px;
+	padding-left:30px;
+	padding-top:20px;
+	margin-top:5px;
+	vertical-align : middle;
+}
+
+.cata_shop:hover{
+	background-image:url('../../Changhua/cata/slider_hover.png');
+	}
+	
+.cata_shop a:hover{
+	text-decoration:none;
+	}
 
 .cata_sub{
 	width: 196px;

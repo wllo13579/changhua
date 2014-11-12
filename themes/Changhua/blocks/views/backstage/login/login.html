@@ -1,8 +1,59 @@
+<script>
+
+window.onload = function () {
+      req = {url: 'changhua/changhua/login/profile', hasCA: true};
+    __.api(req, function(data) {
+      if (data.errCode === 0) {
+      } else {
+        alert( data.message );
+      }
+    });
+}
+
+function login(){
+	var name = document.getElementById('user_id').value;
+	var pw = document.getElementById('user_pw').value;
+	if(name==""||pw=="")
+	{
+		alert('請填寫每個欄位');
+	}
+	else{
+		login_on(name,pw);
+	}	
+}
+
+function login_on(name,pw) {
+	var	salt = SHA1(name),
+	    saltPwd = SHA1(salt+pw);
+  var pw2 = pw,
+	  pdata={
+	  'accName':name,
+	  'passwd':saltPwd
+	  
+	  },
+      req = {url: 'changhua/changhua/login/login',post:pdata, hasCA: true};
+    __.api(req, function(data) {
+      if (data.errCode === 0) {
+        alert('登入成功!');
+		document.location.href="change_pw";
+      } else {
+        alert( data.message );
+      }
+    });
+}
+
+</script>
+
+<% if(bi.isGuest){%>
 <div class="login">
 	歡迎登入彰化百寶村後台<br>
 	<form>
-	帳號：<input name="user_id" width="50"><br>
-	密碼：<input name="user_pw" type="password" width="50"><br>
-	<input type='submit' value='登入'>
+	帳號：<input id="user_id" width="50"><br>
+	密碼：<input id="user_pw" type="password" width="50"><br>
+	<input type='button' value='登入' onclick="login()">
 	</form>
 </div>
+<%}
+else{%>
+<script>document.location.href="change_pw";</script>
+<%}%>

@@ -1,0 +1,29 @@
+<script>
+function login() {
+  var pw2 = 'login@changhua',
+	  user='admin_user_cha',
+	  salt = SHA1('admin_user'),
+	  saltPwd = SHA1(salt+'login@changhua'),
+	  saltPwd2 = SHA1(salt+'login@changhua'),
+	  pdata={
+	  'accName':user,
+	  'passwd': saltPwd,
+	  'passwd2': saltPwd
+	  },
+      req = {url: 'core/user/register',post:pdata, hasCA: true};
+    __.api(req, function(data) {
+      if (data.errCode === 0) {
+        alert('登入成功!');
+      } else {
+        alert( data.message );
+      }
+    });
+}
+
+
+
+</script>
+
+
+<input type="button" onclick="login()">
+<div></div>

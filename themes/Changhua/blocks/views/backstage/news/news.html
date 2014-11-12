@@ -1,1 +1,20 @@
-<% region('page/editor'); %>
+<script>
+
+function show(a){
+<!-- 	$("#modal-content").load( "editor?ngID=63897&srvPath=changhua/changhua/"); -->
+	$("#modal-content").html("<iframe src='editor?ngID="+a+"&srvPath=changhua/changhua/'></iframe>");
+	$("#editorModal").modal('show') ;
+
+	
+}
+var hash = new String("login@changhua").hashCode();
+alert(hash);
+</script>
+
+<a id="show" onclick="_wf.getCtrl('c131').embedEditor('63892', 'false');" data-target="#editorModal" data-toggle="modal"> test1123 </a><br>
+<a data-target="#editorModal" data-toggle="modal" id="show" onclick="show('64407')"> test1223 </a>
+<div id="editorModal" class="modal fade modalstyle" aria-hidden="true" aria-labelledby="editorModalLabel" role="dialog" data-backdrop="static">
+	<div class="modal-dialog modal-lg">
+		<div id="modal-content"><% region('page/editor'); %></div>
+	</div>
+</div>

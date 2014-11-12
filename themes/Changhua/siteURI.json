@@ -51,10 +51,34 @@
     "/backstage": {
         "id": "no"
     },
-	"/backstage/news": {
+    "/backstage/news": {
         "id": "no"
     },
-	"/backstage/login": {
+    "/backstage/login": {
+        "id": "no"
+    },
+	"/backstage/banner": {
+        "id": "no",
+        "service": "/changhua/changhua/listAux/65327"
+    },
+    "/backstage/editor": {
+        "id": "no"
+    },
+	"/backstage/change_pw": {
+        "id": "no"
+    },
+	"/backstage/logout": {
+        "id": "no",
+		"service": "/changhua/login/logout"
+    },
+    "/images": {
+        "id": "yes",
+        "args": [
+            "path"
+        ],
+        "service": "/cms/att/node"
+    },
+    "/create": {
         "id": "no"
     }
 }

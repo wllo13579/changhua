@@ -1,13 +1,4 @@
-.login{
-	font-size:12pt;
-	width: 1025px;
-	height: 236px;
-	line-height:40px;
-	text-align:center;
-
-}
-.login input{
-	height:30px;
-	line-height:25px;
-
+iframe {
+width:800px;
+height:800px;
 }

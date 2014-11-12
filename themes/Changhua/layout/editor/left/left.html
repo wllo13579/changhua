@@ -1,5 +1,4 @@
 <script type='text/javascript'>
-
 window.onload = function cata_init()
 {
 	var pagename = window.location.pathname;
@@ -86,14 +85,27 @@ function bg( id )
 </script>
 
 <div id='menus'>
-	<div class="cata_master" id="cata1" onclick='bg("cata1");'><a href="banner?nType=3">Banner圖片輪播</a></div>
+	<div class="cata_master" id="cata1" onclick='toggleMenu("m1");bg("cata1");'><a href="javascript:void(0);"><img src ='../../Changhua/cata/icon1.png'><img src ='../../Changhua/cata/sub1.png'></a>
+	</div>
+	<div class="cata_sub" id="m1">
+		<div class="one" id="sub_cata">
+			<div class="item"><a href="about#page_top"><img src ='../../Changhua/cata/indroduce.png'></a></div>
+		</div>
+	</div>
 	
-	<div class="cata_master" id="cata2" onclick='bg("cata2");'><a href="editor?srvPath=changhua/changhua/&ngID=65383">村民公告(最新消息)</a></div>
-
+	<div class="cata_master" id="cata2" onclick='toggleMenu("m2");bg("cata2");'><a href="javascript:void(0);"><img src ='../../Changhua/cata/icon2.png'><img src ='../../Changhua/cata/sub5.png'></a>
+	</div>
+	<div class="cata_sub" id="m2">
+		<div class="two" id="sub_cata">
+			<div class="item"><a href="news#page_top"><img src ='../../Changhua/cata/news.png'></a></div>
+			<div class="item"><a href="product#page_top"><img src ='../../Changhua/cata/title22.png'></a></div>
+		</div>
+	</div>
 	
 	
-	<div class="cata_master" id="cata3" onclick='toggleMenu("m3");bg("cata3")' ><a href="javascript:void(0);">百寶村特產</a></div>
-	<div class="cata_sub" id="m3" style="display:none">
+	<div class="cata_master" id="cata3" onclick='toggleMenu("m3");bg("cata3")' ><a href="javascript:void(0);"><img src ='../../Changhua/cata/icon3.png'><img src ='../../Changhua/cata/sub3.png'></a>
+	</div>
+	<div class="cata_sub" id="m3">
 		<div class="three" id="sub_cata">
 			<div class="item"><a href="food#page_top" ><img src ='../../Changhua/cata/specialty.png'></a></div>
 			<div class="item"><a href="life#page_top" ><img src ='../../Changhua/cata/life.png'></a></div>
@@ -101,12 +113,24 @@ function bg( id )
 		</div>
 	</div>
 	
-	<div class="cata_master" id="cata4" onclick='bg("cata4")'><a href="javascript:void(0);">嚴選好伴手</a>	</div>
+	<div class="cata_master" id="cata4" onclick='toggleMenu("m4");bg("cata4")'><a href="javascript:void(0);"><img src ='../../Changhua/cata/icon4.png'><img src ='../../Changhua/cata/sub4.png'></a>
+	</div>
+	<div class="cata_sub" id="m4">
+		<div class="one" id="sub_cata">
+			<div class="item"><a href="top_select#page_top" ><img src ='../../Changhua/cata/mainstar.png'></a></div>
+		</div>
+	</div>
 	
-	<div class="cata_master" id="cata5" onclick='bg("cata5")'><a href="change_pw">修改密碼</a></div>
-	<div class="cata_master" id="cata6"><a href="logout">登出</a></div>
+	<div class="cata_master" id="cata5" onclick='toggleMenu("m5");bg("cata5")'><a href="javascript:void(0);"><img src ='../../Changhua/cata/icon5.png'><img src ='../../Changhua/cata/sub2.png'></a>
+	</div>
+	<div class="cata_sub" id="m5">
+		<div class="two" id="sub_cata">
+			<div class="item"><a href="fun#page_top" ><img src ='../../Changhua/cata/run.png'></a></div>
+			<div class="item"><a href="scenery#page_top" ><img src ='../../Changhua/cata/viewpoint.png'></a></div>
+		</div>
+	</div>
 	
+	<div class="cata_shop" id="cata6"><a href="http://www.google.com" target="_blank"><img src ='../../Changhua/cata/yahoo.png'></a></div>
 		
 </div>
-
 

@@ -25,15 +25,9 @@
     </script>
   </head>
   <body>
-  <%if(bi.isGuest){ %>
-<script>alert('請先登入');</script>
-<%}else{%>
-	<div id="pgContainer">	
-	<div id="pgHead"><% region('./head'); %></div>	
-      <div id="pgLeft"><% region('./left'); %></div>
-  	<div id="pgContent"><% block(); %></div>
-  	<div id="pgFooter"><% region('./footer'); %></div>
+  
+	<div id="pgContainer_edit">	
+  	<div id="pgContent_edit"><% block(); %></div>
 	</div>
-	<%}%>
   </body>
 </html>
