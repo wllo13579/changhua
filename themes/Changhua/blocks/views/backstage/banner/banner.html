@@ -1,60 +1,35 @@
-<script>
-function pic_delete(cnID) {
-      var req = {url: 'changhua/changhua/changhua/unattach/'+cnID, hasCA: true};
-    __.api(req, function(data) {
-      if (data.errCode === 0) {
-        alert('刪除成功!');
-		window.location.reload();
-      } else {
-        alert( data.message );
-      }
-    });
-}
+<div id="content_all">
+	<a name="page_top"></a>
+	<div class="content_scroll">
+		<div id="title"> Banner圖片輪播 </div>
+		<br><br>
+		<table border=1 align="center">
+		<tr>
+		<td colspan='3' class='title_banner'>
+		<form id="uploader" action="" enctype="multipart/form-data" method="POST" style="text-align:left">
+		<span style="font-size:16pt;">新增Banner圖片：</span><br><br>
+		<input id="file" type="file" name="aaa"  >
+		<input type="hidden" name="nType" value="3" >
+		<input type="hidden" name="hasCA" value="1" >
+		<input value="確定上傳" type="submit">
+		</form>
+		</td>
+		</tr>
+		<% var a=0;
+		value.list.forEach(function(item) {
+		a+=1;%>
+		<tr>
+		<td width="50" class='num'><%=a%></td>
+		<td width="520" class='banner'>
+		<img src='/images/64407?path=<%= item.dataURI%>&maxw=500' id='<%= item.cnID%>'><br><br>
+		</td>
+		<td width="50"><input type='button' value='刪除' onclick="<%=ctrl%>.pic_delete('<%= item.cnID%>')" ></td>		
+		</tr>
+		<%})%>
 
-
-$('#pic_path').submit(doUpload);
-var	doUpload= function(e) {
-	var settings= {
-    url: getCA()+'/'+getSrvPath()+'attach/65327',
-    type: 'POST',
-    processData: false,
-    contentType: false,
-    success: function() {
-      alert("ya");
-    },
-    error: function(err) {
-      alert(JSON.stringify(err));
-    }};
-    e.preventDefault();
-    e.stopPropagation();
-
-    settings['data'] = new FormData(e.target);
-    $.ajax(settings);
-  }
-function getSrvPath() {
-    return  getNGAttr('srv');
-};
-function getCA() {
-    return  getNGAttr('ca');
-};
-</script>
-<div id="title"> Banner圖片輪播 </div>
-<div id="main">
-<table>
-<% value.list.forEach(function(item) {%>
-<tr>
-<td><input type='button' value='刪除' onclick="pic_delete('<%= item.cnID%>')" ></td>
-<td>
-<img src='/images/64407?path=<%= item.dataURI%>&maxw=500' id='<%= item.cnID%>'><br><br>
-</td>
-</tr>
-<%})%>
-
-</table>
-<form id="pic_path" action="" enctype="multipart/form-data" method="POST" style="text-align:left">
-新增圖片：<input id="file" type="file" >
-<input type="hidden" name="nType" value="3" >
-<input type="hidden" name="hasCA" value="1" >
-<input value="確定上傳"  type="submit">
-</form>
+		</table>
+		
+	</div>	
 </div>
+
+

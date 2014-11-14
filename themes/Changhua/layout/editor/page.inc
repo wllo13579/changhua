@@ -3,5 +3,6 @@
 /shared/js/lib/bootstrap/js/bootstrap.min.js
 /shared/js/wFront.js
 /shared/js/lib/jquery.cleditor.min.js
-/shared/js/lib/jquery.cleditor.js
 /shared/css/jquery.cleditor.css
+/shared/css/font-awesome.css
+/shared/js/lib/jquery.cleditor.js

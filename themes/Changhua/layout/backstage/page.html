@@ -4,7 +4,7 @@
     <title><%=ctx.title%></title>
     <meta name="description" content="<%ctx.description%>" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="shortcut icon" href="../../wcoim/backstage/favicon.ico">
+    <link rel="shortcut icon" href="../../Changhua/logo.png">
     <% includeCss(); %>
     <% includeJs(); %>
 
@@ -26,7 +26,10 @@
   </head>
   <body>
   <%if(bi.isGuest){ %>
-<script>alert('請先登入');</script>
+	<script>
+	alert('請先登入');
+	document.location.href="login";
+	</script>
 <%}else{%>
 	<div id="pgContainer">	
 	<div id="pgHead"><% region('./head'); %></div>	

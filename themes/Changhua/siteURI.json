@@ -9,7 +9,7 @@
     },
     "/news": {
         "id": "no",
-        "service": "/changhua/changhua/view/63894"
+        "service": "/changhua/changhua/view/65383"
     },
     "/product": {
         "id": "no",
@@ -58,6 +58,22 @@
         "id": "no"
     },
 	"/backstage/banner": {
+        "id": "no",
+        "service": "/changhua/changhua/listAux/65327"
+    },
+	"/backstage/food": {
+        "id": "no",
+        "service": "/changhua/food/list"
+    },
+	"/backstage/culture": {
+        "id": "no",
+        "service": "/changhua/culture/list"
+    },
+	"/backstage/life": {
+        "id": "no",
+        "service": "/changhua/life/list"
+    },
+	"/backstage/news": {
         "id": "no",
         "service": "/changhua/changhua/listAux/65327"
     },

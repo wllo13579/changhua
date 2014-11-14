@@ -1,0 +1,52 @@
+<script>
+function edit(id)
+{
+
+	$("#modal-content").load('editor?srvPath=changhua/culture/&ngID='+id); 
+	$("#editorModal").modal('show') ;
+
+}
+function new_page()
+{
+
+	$("#modal-content").load('editor?srvPath=changhua/culture/'); 
+	$("#editorModal").modal('show') ;
+
+}
+</script>
+<div id="content_all">
+	<a name="page_top"></a>
+	<div class="content_scroll">
+		<div class="title"> 文化工藝 </div>
+		<br><br>
+		<div class='new_page'><input type='button' value='新增文章' onclick="new_page()" ></div><br><br>
+		<table border=1 align="center">
+		<tr>
+		<td width="30">No.</td>
+		<td width="450">文章列表</td>
+		<td width="100">操作選項</td>
+		</tr>
+		<% var a=0;
+		value.list.forEach(function(item) {
+		a+=1;%>
+		<tr>
+		<td ><%=a%></td>
+		<td ><%=item.title%></td>
+		<td><input type='button' value='編輯' onclick="edit('<%= item.ngID%>')" ><input type='button' value='刪除' onclick="delete('<%= item.cnID%>')" ></td>		
+		</tr>
+		<%})%>
+
+		</table>
+		
+		<!-- 彈跳視窗開始 -->
+		<div id="editorModal" class="modal fade modalstyle" aria-hidden="true" aria-labelledby="editorModalLabel" role="dialog" data-backdrop="static">
+			<div class="modal-dialog modal-lg">
+				<div id="modal-content"></div>
+			</div>
+		</div>
+		<!-- 彈跳視窗結束 -->
+		
+	</div>	
+</div>
+
+

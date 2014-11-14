@@ -44,7 +44,7 @@
 	overflow-y:scroll;
 }
 
-#title{
+.title{
 	padding-top:35px;
 	padding-left:50px;
 	width:400px;
@@ -81,4 +81,19 @@
 	padding-top:20px;
 	padding-left:20px;
 	padding-bottom:20px;
+}
+
+.new_page
+{
+	float:right;
+	padding-right:40px;
+}
+.modal-dialog
+{
+widht:300px;
+}
+
+.matter
+{
+background-color:#fff;
 }

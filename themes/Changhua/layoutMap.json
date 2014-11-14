@@ -1,5 +1,6 @@
 {
 	"/index": "mainpage",
 	"/backstage": "backstage",
-	"/backstage/login": "login"
+	"/backstage/login": "login",
+	"/backstage/editor" : "editor"
 }
