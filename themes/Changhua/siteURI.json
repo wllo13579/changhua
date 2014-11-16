@@ -31,7 +31,7 @@
     },
     "/culture": {
         "id": "no",
-        "service": "/changhua/changhua/view/63896"
+        "service": "/changhua/culture/list"
     },
     "/culture_buy": {
         "id": "no"
@@ -51,37 +51,47 @@
     "/backstage": {
         "id": "no"
     },
-    "/backstage/news": {
-        "id": "no"
-    },
     "/backstage/login": {
-        "id": "no"
+        "id": "no",
+		"title":"後台登入"
     },
 	"/backstage/banner": {
         "id": "no",
-        "service": "/changhua/changhua/listAux/65327"
+        "service": "/changhua/changhua/listAux/65327",
+		"title":"Banner圖片輪播"
     },
 	"/backstage/food": {
         "id": "no",
-        "service": "/changhua/food/list"
+        "service": "/changhua/food/list",
+		"title":"特產美食"
     },
 	"/backstage/culture": {
         "id": "no",
-        "service": "/changhua/culture/list"
+        "service": "/changhua/culture/list",
+		"title":"文化工藝"
     },
 	"/backstage/life": {
         "id": "no",
-        "service": "/changhua/life/list"
+        "service": "/changhua/life/list",
+		"title":"創意生活"
     },
 	"/backstage/news": {
         "id": "no",
-        "service": "/changhua/changhua/listAux/65327"
+        "service": "/changhua/news/list",
+		"title":"村民公告"
+    },
+	"/backstage/top_select": {
+        "id": "no",
+        "service": "/changhua/topselect/list",
+		"title":"百寶主打星"
     },
     "/backstage/editor": {
-        "id": "no"
+        "id": "no",
+		"title":"編輯器"
     },
 	"/backstage/change_pw": {
-        "id": "no"
+        "id": "no",
+		"title":"修改密碼"
     },
 	"/backstage/logout": {
         "id": "no",

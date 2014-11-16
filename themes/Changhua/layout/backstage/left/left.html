@@ -4,19 +4,16 @@ window.onload = function cata_init()
 {
 	var pagename = window.location.pathname;
 	
-	var page_name = ['/about', '/news', '/product', '/food', '/life', '/culture', '/top_select', '/fun', '/scenery'];
-	var page_cata = new Array('m1', 'm2', 'm2', 'm3', 'm3', 'm3', 'm4', 'm5', 'm5');
-	var page_master_cata = new Array('cata1', 'cata2', 'cata2', 'cata3', 'cata3', 'cata3', 'cata4', 'cata5', 'cata5');
+	var page_name = ['/backstage/banner', '/backstage/news', '/backstage/food', '/backstage/life', '/backstage/culture', '/backstage/top_select', '/backstage/change_pw'];
+	var page_cata = new Array('m1', 'm2', 'm3', 'm3', 'm3', 'm4', 'm5');
+	var page_master_cata = new Array('cata1', 'cata2', 'cata3', 'cata3', 'cata3', 'cata4', 'cata5');
 	var a = page_name.indexOf(pagename);
-	var cata_now = page_cata[a];
 	var mastercata_cnow = page_master_cata[a];
-	
 	for(var key in page_name){
 		var temp;
 		var temp_back;
-		var o = document.getElementById( page_cata[key] );
 		var p = document.getElementById( page_master_cata[key] );
-		if(pagename == page_name[key] || page_cata[key] == cata_now)
+		if(pagename == page_name[key] )
 			{  
 				temp='inline';
 				temp_back='url(../../Changhua/cata/slider_hover.png)';
@@ -27,20 +24,16 @@ window.onload = function cata_init()
 				temp='none';
 				temp_back='';
 			}
-		o.style.display = temp;
 		p.style.backgroundImage = temp_back;	
 	  }
 }
 function toggleMenu( id )
 {
-	var pages = new Array('m1', 'm2', 'm3','m4','m5');
-	
-  for(var key in pages){
 	var temp;
 	var display;
-	var o=document.getElementById( pages[key] );
+	var o=document.getElementById('m3');
 	display = o.style.display;
-	if(id == pages[key])
+	if(id == 'm3')
 		{  
 			temp=(display=='none') ? 'inline' : 'none';
 			
@@ -52,7 +45,7 @@ function toggleMenu( id )
 		}
 	
 	o.style.display = temp;  
-  }
+
   
 
 }
@@ -86,9 +79,9 @@ function bg( id )
 </script>
 
 <div id='menus'>
-	<div class="cata_master" id="cata1" onclick='bg("cata1");'><a href="banner?nType=3">Banner圖片輪播</a></div>
+	<div class="cata_master" id="cata1"><a href="banner?nType=3#page_top">Banner圖片輪播</a></div>
 	
-	<div class="cata_master" id="cata2" onclick='bg("cata2");'><a href="editor?srvPath=changhua/changhua/&ngID=65383">村民公告(最新消息)</a></div>
+	<div class="cata_master" id="cata2"><a href="news#page_top">村民公告(最新消息)</a></div>
 
 	
 	
@@ -101,9 +94,8 @@ function bg( id )
 		</div>
 	</div>
 	
-	<div class="cata_master" id="cata4" onclick='bg("cata4")'><a href="javascript:void(0);">嚴選好伴手</a>	</div>
-	
-	<div class="cata_master" id="cata5" onclick='bg("cata5")'><a href="change_pw">修改密碼</a></div>
+	<div class="cata_master" id="cata4"><a href="top_select#page_top">嚴選好伴手</a></div>	
+	<div class="cata_master" id="cata5"><a href="change_pw#page_top">修改密碼</a></div>
 	<div class="cata_master" id="cata6"><a href="logout">登出</a></div>
 	
 		

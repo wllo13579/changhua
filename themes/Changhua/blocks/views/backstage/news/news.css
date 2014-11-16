@@ -1,4 +1,117 @@
-iframe {
-width:800px;
-height:800px;
+
+::-webkit-scrollbar {
+  width: 26px;
+  }
+
+::-webkit-scrollbar-track-piece {
+	background-image: url(../../Changhua/track.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+  }
+
+::-webkit-scrollbar-thumb:vertical {
+	height: 50px;
+	background-image: url(../../Changhua/scroll.png);
+	background-repeat:no-repeat;
+	background-position:top center;
+ }
+
+::-webkit-scrollbar-thumb:horizontal {
+	background-image: url(../../Changhua/scroll.png);
+	background-repeat:no-repeat;
+
+}
+
+#content_all{
+	float:left;
+	width: 700px;
+	height: 960px;	
+	position:relative;
+	top:20px;
+	padding-left:20px;
+	border:1px solid #000;
+	border-radius:15px;
+
+
+}
+
+.content_scroll{
+	float:left;
+ 	width: 680px;
+	height: 940px;	
+	position:relative;
+ 	overflow-x:hidden;
+	overflow-y:scroll;
+}
+
+.title{
+	padding-top:35px;
+	padding-left:50px;
+	width:400px;
+	height:70px;
+	background-image:url('../../Changhua/line.png');
+	background-position:35px 35px;
+	background-repeat:no-repeat;
+	font-size:18pt;
+}
+
+ #content{
+	padding-top:10px;
+	padding-left:30px;
+	padding-right:90px;
+
+} 
+
+.num
+{
+	width:50px;
+	text-align:center;
+	font-weight:bold;
+	font-size:16pt;
+}
+
+.banner
+{
+	width:520px;
+	height:200px; 
+}
+
+.title_banner
+{
+	padding-top:20px;
+	padding-left:20px;
+	padding-bottom:20px;
+}
+
+.new_page
+{
+	float:right;
+	padding-right:40px;
+}
+.modal-dialog
+{
+widht:300px;
+}
+
+.matter
+{
+background-color:#fff;
+}
+
+.form_title
+{
+	text-align:center;
+	font-size:12pt;
+	line-height:20pt;
+	font-weight:bold;
+}
+
+.import
+{
+	padding:5px 5px 5px 5px;
+	margin-left:40px;
+	margin-right:40px;
+	margin-bottom:20px;
+	font-size:12pt;
+	border:2px solid;
 }

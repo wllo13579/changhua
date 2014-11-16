@@ -216,9 +216,16 @@ ctrl.save = function() {
       op = ( ngID === 'undefined' ? ( geID === 'undefined' ? 'create' : 'updInfo/'+geID ) : (geID === 'undefined' ? 'update/'+ngID : 'updInfo/'+geID) ),
       req = {url: getCA() + '/' + srvPath+op, post:pdata, hasCA: true};
     __.api(req, function(data) {
-      if (data.errCode === 0) {
+      if (data.errCode === 0 && ngID != 'undefined') {
+		alert('修改成功!');
         ctrl.callHandler("reqCloseEditor");
-      } else if (data.errCode === 2) {
+		$('#exit').click();
+      }else if (data.errCode === 0 && ngID === 'undefined') {
+        alert('新增成功！');
+		$('#exit').click();
+		window.location.reload();
+      }
+	  else if (data.errCode === 2) {
         alert('建立文章的人才能編輯喔！');
       } else {
         alert( data.message );
