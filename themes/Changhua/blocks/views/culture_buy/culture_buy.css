@@ -45,11 +45,12 @@
 #title{
 	padding-top:40px;
 	padding-left:50px;
-	width:200px;
+	width:300px;
 	height:70px;
 	background-image:url('../../Changhua/line.png');
 	background-position:35px 35px;
 	background-repeat:no-repeat;
+	font-size:16pt;
 }
 
  #content{
@@ -69,40 +70,53 @@
 }
 
 .item_pic {
-	width:145px
-	height:150px;
+	float:right;
+	width:280px
+	height:280px;
 	text-align:center;
+	position:relative;
+	bottom:30px;
 
 }
 
 .item_pic img{
-	width:145px;
-	height:145px;
+	width:280px;
+	height:280px;
 	border-radius: 50%;	
     border:3px solid #fff;
 	margin-top:60px;
 	
-	filter:alpa(opacity=50);   /* old IE */
-	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=50,FinishOpacity=15, Style=3, StartX=0, FinishX=100, StartY=0,FinishY=16); /*supported by current IE*/
-	-moz-opacity:0.5;          /* Moz + FF */
-	opacity:0.5;
 
 }
 
-.item_pic img:hover{
-	filter:alpa(opacity=100);   /* old IE */
-	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100,FinishOpacity=15, Style=3, StartX=0, FinishX=100, StartY=0,FinishY=16); /*supported by current IE*/
-	-moz-opacity:1;          /* Moz + FF */
-	opacity:1;
-	
+.item_back {
+	width:320px;
+	position:relative;
+	top:50px;
+	left:20px;
+}
 
-}
-.item a:hover{
-text-decoration:none;
-}
-.item_title {
-	width:145px;
-	height:50px;
+.item_buy {
+	float:right;
+	width:152px;
+	position:relative;
+	right:40px;
 	text-align:center;
+}
+.click
+{
+	width:152px;
 	padding-top:5px;
+	padding-bottom:5px;
+	margin-top:5px;
+	background-color:#CDB38B;
+	color:#fff;
+	position:relative;
+	font-size:14pt;
+}
+.item_content {
+	float:left;
+	width:320px;
+	padding-top:5px;
+	padding-left:10px;
 }

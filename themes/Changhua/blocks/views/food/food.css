@@ -97,7 +97,9 @@
 	
 
 }
-
+.item a:hover{
+text-decoration:none;
+}
 .item_title {
 	width:145px;
 	height:50px;
