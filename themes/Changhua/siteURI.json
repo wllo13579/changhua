@@ -20,21 +20,24 @@
         "service": "/changhua/changhua/view/63895"
     },
     "/food_buy": {
-        "id": "no"
+        "id": "yes",
+		"service": "/changhua/food/view/"
     },
     "/life": {
         "id": "no",
         "service": "/changhua/changhua/view/63897"
     },
     "/life_buy": {
-        "id": "no"
+        "id": "yes",
+		"service": "/changhua/life/view/"
     },
     "/culture": {
         "id": "no",
         "service": "/changhua/culture/list"
     },
     "/culture_buy": {
-        "id": "no"
+        "id": "yes",
+		"service": "/changhua/culture/view/"
     },
     "/top_select": {
         "id": "no",
@@ -94,8 +97,7 @@
 		"title":"修改密碼"
     },
 	"/backstage/logout": {
-        "id": "no",
-		"service": "/changhua/login/logout"
+        "id": "no"
     },
     "/images": {
         "id": "yes",

@@ -1,9 +1,17 @@
 <script>
-if (data.errCode === 0) {
-        alert('登出成功!');
-		document.location.href="login";
+$(function(){	
+      var req = {url: 'changhua/changhua/login/logout', hasCA: true};
+    __.api(req, function(data) {
+      if (data.errCode === 0) {
+		var expires = new Date();
+		expires.setTime (expires.getTime() - 1);
+		document.cookie = "token=;expires=" + expires.toGMTString()+ ";" + "; path=/";
+		alert('登出成功!');
+		document.location.href="login";				
       } else {
-        alert( data.message );
+	  alert(data.message);
       }
-
+    });
+	
+});
 </script>

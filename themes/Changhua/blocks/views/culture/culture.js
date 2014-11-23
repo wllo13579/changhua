@@ -25,7 +25,7 @@ function get_pic(ngID,title){
     __.api(req, function(data) {
       if (data.errCode === 0) {	
 		a='';
-		a+="<div class='item'><a href='culture_buy?ngID="+ngID+"'><div class='item_pic'><img src='/images/"+ngID+"?path=";
+		a+="<div class='item'><a href='culture_buy/"+ngID+"?ngID="+ngID+"'><div class='item_pic'><img src='/images/"+ngID+"?path=";
 		a+=data.value.list[0].dataURI;
 		a+="&maxw=145'></div><div class='item_title'>";
 		a+=title;
