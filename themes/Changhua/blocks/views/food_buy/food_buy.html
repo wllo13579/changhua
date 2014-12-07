@@ -2,6 +2,17 @@
 	<a name="page_top"></a>
 	<div class="content_scroll">
 		<div id="content">
+		<div id='title'><%=value.title%></div>
+		<div class='item'><div class='item_pic'>
+		<% if(value.iconURI!=null){%>
+		<img src='/images/<%=value.ngID%>?path=<%=value.iconURI%>&maxw=270'>
+		<%}else{%>
+		<img src='../../Changhua/yahoo_null.jpg'>
+		<%}%>
+		</div>
+		<div class='item_content'><%=value.body%></div></div>
+		<div class='item_back'><a href='../food#page_top'><img src='../../Changhua/prev.png'></a></div>
+		<div class='item_buy'><img src='../../Changhua/yahoo_s.png'><div class='click'>點 我 購 買</div></div>
 		</div>
 	</div>	
 </div>

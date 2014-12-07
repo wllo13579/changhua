@@ -5,7 +5,7 @@ $(function(){
 	  'nType':'3',
 	  'pri':'2'
 	  };
-      var req = {url: 'changhua/changhua/news/list',post:postdata, hasCA: true};
+      var req = {url: 'changhua/changhua/topselect/list',post:postdata, hasCA: true};
     __.api(req, function(data) {
       if (data.errCode === 0) {	  
 		data.value.list.forEach(function(item) {
@@ -22,7 +22,7 @@ function get_pic(ngID,title,mdTime,summary,icon){
 	  var postdata={
 	  'pic':'1'
 	  };
-      var req = {url: 'changhua/changhua/news/view/'+ngID,post:postdata, hasCA: true};
+      var req = {url: 'changhua/changhua/topselect/view/'+ngID,post:postdata, hasCA: true};
     __.api(req, function(data) {
       if (data.errCode === 0) {	
 		a='';

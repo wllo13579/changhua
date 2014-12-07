@@ -8,8 +8,7 @@
         "service": "/changhua/changhua/view/63493"
     },
     "/news": {
-        "id": "no",
-        "service": "/changhua/changhua/view/65383"
+        "id": "no"
     },
     "/product": {
         "id": "no",
@@ -17,31 +16,35 @@
     },
     "/food": {
         "id": "no",
-        "service": "/changhua/changhua/view/63895"
+        "service": "/changhua/food/list"
     },
     "/food_buy": {
         "id": "yes",
-		"service": "/changhua/food/view/"
+		"service": "/changhua/food/view",
+		"params":{"icon":"1"}
     },
     "/life": {
         "id": "no",
-        "service": "/changhua/changhua/view/63897"
+        "service": "/changhua/life/list",
+		"params":{"pri":"2"}
     },
     "/life_buy": {
         "id": "yes",
-		"service": "/changhua/life/view/"
+		"service": "/changhua/life/view",
+		"params":{"icon":"1"}
     },
     "/culture": {
         "id": "no",
-        "service": "/changhua/culture/list"
+        "service": "/changhua/culture/list",
+		"params":{"pri":"2"}
     },
     "/culture_buy": {
         "id": "yes",
-		"service": "/changhua/culture/view/"
+		"service": "/changhua/culture/view",
+		"params":{"icon":"1"}
     },
     "/top_select": {
-        "id": "no",
-        "service": "/changhua/changhua/view/63893"
+        "id": "no"
     },
     "/fun": {
         "id": "no",
@@ -107,6 +110,7 @@
         "service": "/cms/att/node"
     },
     "/create": {
-        "id": "no"
+        "id": "no",
+		"service": "/changhua/culture/view/65593"
     }
 }

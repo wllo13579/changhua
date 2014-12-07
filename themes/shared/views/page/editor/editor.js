@@ -236,15 +236,15 @@ ctrl.save = function() {
 function switchSize(allMenu) {
   if (!allMenu) {
     ctrl.sel('#menuBtn').hide();
-    ctrl.sel('#iconField').hide();
-    ctrl.sel('#iconRelate').toggleClass('col-md-12 col-xs-12 col-md-10 col-xs-10');
+    //ctrl.sel('#iconField').hide();
+    //ctrl.sel('#iconRelate').toggleClass('col-md-12 col-xs-12 col-md-10 col-xs-10');
   }
   if (hideLeft) {
     ctrl.sel('#leftSide').css('display', 'none');
     ctrl.sel('#rightSide').removeClass('col-md-9');
     ctrl.sel('.rightMenu').removeClass('col-md-10');
   } else {
-    ctrl.sel('#leftSide').css('display', 'block');
+    ctrl.sel('#leftSide').css('display', 'none');
     ctrl.sel('#rightSide').addClass('col-md-9');
     ctrl.sel('.rightMenu').addClass('col-md-10');
     ctrl.sel('.rightMenu').removeClass('col-md-12');

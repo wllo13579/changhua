@@ -7,7 +7,7 @@
     <div>
       <button class="icon-align-justify" id="menuBtn" onclick="<%=ctrl%>.showMenu();"></button>
     </div>
-    <div class="col-md-3 col-xs-12 left-Con leftMenu" id="leftSide" style="padding: 0 5px">
+    <div class="col-md-3 col-xs-12 left-Con leftMenu" id="leftSide" style="padding: 0 5px;display:none">
         <div class="Box-group">
             <div class="Box-heading">
               <a class="Box-toggle" data-toggle="collapse" data-parent="#pgEditImgClps" href="#Box1"><%= ph.geoloc%></a>
@@ -63,7 +63,7 @@
     <!-- 左側內容結束 -->
 
     <!-- 右側內容開始 -->
-    <div class="col-md-9 col-xs-12 rightMenu" id="rightSide">
+    <div class="col-md-12 col-xs-12 rightMenu" id="rightSide">
       <div class="rightCon">
         <form class="form-horizontal" role="form">
             <div class="row">
@@ -80,12 +80,12 @@
                 <!-- 左側結束 -->
 
                 <!-- 右側開始 -->
-                <div class="col-md-10 col-xs-10 col-Right rightMenu" id="iconRelate" style="margin-left:-2em; float:right">
+                <div class="col-md-9 col-xs-10 col-Right rightMenu" id="iconRelate" style="margin-left:-5em; float:right">
 
                   <div class="form-group" id="ng" srv="<%=bi.query.srvPath%>" ca="<%=ctx.caCode%>" ng="<%=bi.query.ngID%>" ge="<%=bi.query.geID%>" locale="<%=bi.query.locale%>" allowGeo="<%=bi.query.allowGeo%>">
                     <% if (langNeedSpace) {%>
-                    <label class="col-md-3 col-xs-3 control-label rightLabel" for="title"><%= ph.title%></label>
-                    <div class="col-md-9 col-xs-9">
+                    <label class="col-md-2 col-xs-2 control-label rightLabel" for="title"><%= ph.title%></label>
+                    <div class="col-md-10 col-xs-10">
                     <% }else{ %>
                     <label class="col-md-2 col-xs-2 control-label rightLabel" for="title"><%= ph.title%></label>
                     <div class="col-md-10 col-xs-10">
@@ -95,8 +95,8 @@
                   </div>
                   <div class="form-group">
                     <% if (langNeedSpace) {%>
-                    <label class="col-md-3 col-xs-3 control-label rightLabel" for="summary"><%= ph.summary%></label>
-                    <div class="col-md-9 col-xs-9">
+                    <label class="col-md-2 col-xs-2 control-label rightLabel" for="summary"><%= ph.summary%></label>
+                    <div class="col-md-10 col-xs-10">
                     <% }else{ %>
                       <label class="col-md-2 col-xs-2 control-label rightLabel" for="summary"><%= ph.summary%></label>
                     <div class="col-md-10 col-xs-10">

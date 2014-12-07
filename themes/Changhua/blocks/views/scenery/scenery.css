@@ -43,12 +43,10 @@
 }
 
 #title{
-	padding-top:40px;
+	padding-top:20px;
 	padding-left:50px;
 	width:200px;
 	height:70px;
-	background-image:url('../../Changhua/line.png');
-	background-position:35px 35px;
 	background-repeat:no-repeat;
 }
 
@@ -57,4 +55,63 @@
 	padding-left:30px;
 	padding-right:90px;
 
+}
+
+#pic{
+	padding-top:5px;
+	padding-bottom:5px;
+	text-align:center;
+
 } 
+
+/* 史丹利 */
+#people1{
+	float:right;
+	width: 152px;
+	height: 141px;
+	position:relative;
+	top:20px;
+	right:170px;
+	
+}
+
+/* 貴婦奈奈 */
+#people2{
+	float:right;
+	width: 179px;
+	height: 178px;
+	position:relative;
+	top:140px;
+	left:150px;
+}
+
+/* 路人 */
+#people3{
+	float:right;
+	width: 150px;
+	height: 102px;	
+	position:relative;
+	bottom:70px;
+	left:30px;
+}
+
+/* 小熊 */
+#people4{
+	float:right;
+	width: 146px;
+	height: 157px;
+	position:relative;
+	bottom:100px;
+	left:20px;
+}
+
+/* 蛙大 */
+#people5{
+	float:right;
+	width: 149px;
+	height: 173px;
+	position:relative;
+	top:65px;
+	right:220px;
+}
+

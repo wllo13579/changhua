@@ -3,6 +3,18 @@
 	<div class="content_scroll">
 		<div id="title"><img src="../../Changhua/cata/specialty.png"></div>
 		<div id="content">
+		<% for (var i in value.list){ item =value.list[i]; 
+		if(item.isPublic==1){%>
+		<div class='item'>
+			<a href='food_buy/<%=item.ngID %>?ngID=<%=item.ngID %>#page_top'><div class='item_pic'>
+			<% if(item.iconURI!=null){%>
+			<img src='/images/<%=item.ngID %>?path=<%=item.iconURI %>&maxw=145'>
+			<%}else{%>
+			<img src='../../Changhua/yahoo_null.jpg'>
+			<%}%>
+			</div><div class='item_title'><%=item.title %></div></a>
+		</div>
+		<% }}%>
 		</div>
 	</div>	
 </div>
