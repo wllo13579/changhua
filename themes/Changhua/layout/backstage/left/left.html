@@ -4,9 +4,9 @@ window.onload = function cata_init()
 {
 	var pagename = window.location.pathname;
 	
-	var page_name = ['/backstage/banner', '/backstage/news', '/backstage/food', '/backstage/life', '/backstage/culture', '/backstage/top_select', '/backstage/change_pw'];
-	var page_cata = new Array('m1', 'm2', 'm3', 'm3', 'm3', 'm4', 'm5');
-	var page_master_cata = new Array('cata1', 'cata2', 'cata3', 'cata3', 'cata3', 'cata4', 'cata5');
+	var page_name = ['/backstage/banner', '/backstage/news', '/backstage/food', '/backstage/life', '/backstage/culture', '/backstage/top_select', '/backstage/fun', '/backstage/change_pw'];
+	var page_cata = new Array('m1', 'm2', 'm3', 'm3', 'm3', 'm4', 'm5', 'm6');
+	var page_master_cata = new Array('cata1', 'cata2', 'cata3', 'cata3', 'cata3', 'cata4', 'cata5', 'cata6');
 	var a = page_name.indexOf(pagename);
 	var mastercata_cnow = page_master_cata[a];
 	for(var key in page_name){
@@ -95,8 +95,9 @@ function bg( id )
 	</div>
 	
 	<div class="cata_master" id="cata4"><a href="top_select#page_top">嚴選好伴手</a></div>	
-	<div class="cata_master" id="cata5"><a href="change_pw#page_top">修改密碼</a></div>
-	<div class="cata_master" id="cata6"><a href="logout">登出</a></div>
+	<div class="cata_master" id="cata5"><a href="fun#page_top">放送頭</a></div>
+	<div class="cata_master" id="cata6"><a href="change_pw#page_top">修改密碼</a></div>
+	<div class="cata_master" id="cata7"><a href="logout">登出</a></div>
 	
 		
 </div>

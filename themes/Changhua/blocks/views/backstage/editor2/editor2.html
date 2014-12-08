@@ -1,0 +1,22 @@
+<button type="button" id="exit" class="close alpha80" data-dismiss="modal" aria-hidden="true" style="margin: 20px 20px 0 0">&times;</button>
+<% if(bi.query.ngID==null){%>
+<div id="main">
+	<form name ="subscribe" id="subscribe_frm" action="#">
+	請輸入連結名稱：<input type="text" id="url_name"><br>
+	請輸入連結網址：<input type="text" id="url_url"><br>
+	<input type="button" value="儲存送出" onclick="check()">
+	</form>
+</div>
+<%}
+else{%>
+<div id="main">
+<script type="text/javascript">
+   get_value('<%=bi.query.ngID%>')
+</script>
+	<form name ="subscribe" id="subscribe_frm" action="#">
+	請輸入連結名稱：<input type="text" id="url_name"><br>
+	請輸入連結網址：<input type="text" id="url_url"><br>
+	<input type="button" value="儲存送出" onclick="update('<%=bi.query.ngID%>')">
+	</form>
+</div>
+<%}%>

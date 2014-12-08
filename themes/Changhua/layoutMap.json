@@ -2,5 +2,6 @@
 	"/index": "mainpage",
 	"/backstage": "backstage",
 	"/backstage/login": "login",
-	"/backstage/editor" : "editor"
+	"/backstage/editor" : "editor",
+	"/backstage/editor2" : "editor2"
 }

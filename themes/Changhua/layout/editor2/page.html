@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title><%=ctx.title%></title>
+    <meta name="description" content="<%ctx.description%>" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="../../Changhua/logo.png">
+    <% includeCss(); %>
+    <% includeJs(); %>
+
+    <style type="text/css">
+      <% css(); %>
+    </style>
+    <script type="text/javascript">
+  	<!--
+  	<% js(); %>
+  	$(document).ready(function() {
+      	$.ajaxSetup ({
+        		// Disable caching of AJAX responses
+        		cache: false
+      	});
+  	   __.initPage();
+  	});
+  	-->
+    </script>
+  </head>
+  <body>
+  
+	<div id="pgContainer_edit">	
+  	<div id="pgContent_edit"><% block(); %></div>
+	</div>
+  </body>
+</html>

@@ -48,7 +48,8 @@
     },
     "/fun": {
         "id": "no",
-        "service": "/changhua/changhua/view/63892"
+        "service": "/changhua/fun/list",
+		"params":{"pri":"2"}
     },
     "/scenery": {
         "id": "no",
@@ -91,9 +92,18 @@
         "service": "/changhua/topselect/list",
 		"title":"百寶主打星"
     },
+	"/backstage/fun": {
+        "id": "no",
+        "service": "/changhua/fun/list",
+		"title":"放送頭"
+    },
     "/backstage/editor": {
         "id": "no",
 		"title":"編輯器"
+    },
+	"/backstage/editor2": {
+        "id": "no",
+		"title":"連結編輯器"
     },
 	"/backstage/change_pw": {
         "id": "no",

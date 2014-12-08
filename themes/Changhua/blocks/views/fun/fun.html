@@ -1,12 +1,14 @@
 <div id="content_all">
 	<a name="page_top"></a>
 	<div class="content_scroll">
+	<div id="title"><img src="../../Changhua/cata/sub_title1.png"></div>
+		<div id="people"></div>
 		<div id="content">
-			<div id="title"></div>
-			<div id="">
-			<a href="../about#page_top" ><img src ='../../Changhua/map_l.png'></a></div><div id="pic">
-			<a href="http://tourism.chcg.gov.tw/tc/index.aspx" target="_blank"><img src ='../../Changhua/map_s.png'></a>
-			</div>
+		<% for (var i in value.list){ item =value.list[i]; 
+		if(item.isPublic==1){%>
+			<div id="url_title">●<%=item.title%></div>
+			<div id="url"><%=item.summary%></div>
+		<%}}%>
 		</div>
 	</div>	
 </div>

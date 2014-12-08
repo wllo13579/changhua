@@ -1,0 +1,145 @@
+.cata_master{	
+	width: 240px;
+	height : 80px;
+	line-height : 80px;
+	background-image:url('../../Changhua/cata/slider.png');
+	background-repeat: no-repeat;
+	background-position:right center;
+	position : relative;
+	right:35px;
+	padding-left:30px;
+	padding-top:5px;
+	margin-top:10px;
+	vertical-align : middle;
+	z-index:1;
+}
+
+.cata_master a{	
+	height:80px;
+	width:240px;
+
+}
+
+.cata_master a h1{    display: none;}
+
+.cata_master:hover{
+	background-image:url('../../Changhua/cata/slider_hover.png');
+	}
+
+.cata_master a:hover{
+	text-decoration:none;
+	}	
+	
+.cata_shop{	
+	width: 240px;
+	height : 80px;
+	line-height : 80px;
+	background-image:url('../../Changhua/cata/slider.png');
+	background-repeat: no-repeat;
+	background-position:right center;
+	position : relative;
+	right:35px;
+	padding-left:30px;
+	padding-top:20px;
+	margin-top:5px;
+	vertical-align : middle;
+}
+
+.cata_shop:hover{
+	background-image:url('../../Changhua/cata/slider_hover.png');
+	}
+	
+.cata_shop a:hover{
+	text-decoration:none;
+	}
+
+.cata_sub{
+	width: 196px;
+	height : 80px;
+	z-index:-1;
+	text-align : center; 
+	/* Firefox, Chrome */ 
+	line-height : 80px;
+	white-space : nowrap; 
+		/* IE */ 
+	*font-size : 72px; 
+}
+
+.cata_sub  .one{
+	background-image:url('../../Changhua/cata/dropdown_bg_s.png');
+	background-repeat: no-repeat;
+	background-position:right center;
+	width: 196px;
+	height : 80px;
+	position:relative;
+	right:15px;
+	bottom:3px;	 
+}
+.cata_sub .one:after {
+  content : ".";
+  font-size : 1px; 
+  margin-left : -1px; 
+  opacity : 0; 
+}
+
+.cata_sub .one img{
+	vertical-align : middle;	 
+}
+
+.cata_sub  .two{
+	background-image:url('../../Changhua/cata/dropdown_bg.png');
+	background-repeat: no-repeat;
+	background-position:right center;
+	width: 196px;
+	height : 160px;
+	position:relative;
+	right:15px;
+	bottom:3px;	 
+}
+.cata_sub .two:after {
+  content : ".";
+  font-size : 1px; 
+  margin-left : -1px; 
+  opacity : 0; 
+}
+
+.cata_sub .two img{
+	vertical-align : middle;	 
+}
+
+.cata_sub  .three{
+	background-image:url('../../Changhua/cata/dropdown_bg.png');
+	background-repeat: no-repeat;
+	background-position:right center;
+	width: 196px;
+	height : 240px;
+	position:relative;
+	right:15px;
+	bottom:3px;	 
+}
+.cata_sub .three:after {
+  content : ".";
+  font-size : 1px; 
+  margin-left : -1px; 
+  opacity : 0; 
+}
+
+.cata_sub .three img{
+	vertical-align : middle;	 
+}
+
+.item{
+	width: 196px;
+	height : 80px;
+	line-height:80px;
+	position:relative;  
+	top:25px; 
+	text-align:center;
+
+}
+
+.item:hover{
+	background-image:url('../../Changhua/cata/dropdown_hover.png');
+	background-repeat: no-repeat;
+	background-position:center -30px;
+}

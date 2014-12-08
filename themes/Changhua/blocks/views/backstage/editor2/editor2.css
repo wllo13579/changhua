@@ -1,0 +1,19 @@
+
+#main {
+	padding-top:50px;
+	padding-left:50px;
+	width:800px;
+	height:300px;
+	font-size:16pt;
+	line-height:30pt;
+	text-align:center;
+}
+input{
+	margin-top:10px;
+}
+#url_name{
+	width:400px;
+}
+#url_url{
+	width:400px;
+}

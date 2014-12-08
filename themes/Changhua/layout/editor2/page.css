@@ -1,0 +1,17 @@
+/* Add css rules here that are valid for the whole page */
+body{
+	background-image:url('../../Changhua/bg.jpg');
+	background-repeat: no-repeat;
+	background-position:center top;
+}
+#pgContainer_edit{
+	width:800px;
+	height:300px;
+	background-color:#fff;
+	margin: 0px auto;
+}
+#pgContent_edit {
+	width:800px;
+	height:300px;
+
+}

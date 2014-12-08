@@ -1,0 +1,67 @@
+<script>
+function edit(id)
+{
+
+	$("#modal-content").load('editor2?srvPath=changhua/fun/&ngID='+id); 
+	$("#editorModal").modal('show') ;
+
+}
+function new_page()
+{
+
+	$("#modal-content").load('editor2?srvPath=changhua/fun/'); 
+	$("#editorModal").modal('show') ;
+
+}
+function delete_page(id)
+{	  
+	if (confirm("你確定要刪除這條連結?")){
+		  var req = {url: 'changhua/changhua/fun/delete/'+id, hasCA: true};
+		__.api(req, function(data) {
+		  if (data.errCode === 0) {	  
+			alert('刪除成功！');
+			window.location.reload();		
+		  } else {
+		  alert(data.message);
+		  }
+		});
+	}
+}
+</script>
+<div id="content_all">
+	<a name="page_top"></a>
+	<div class="content_scroll">
+		<div class="title"> 放送頭後台管理 </div>
+		<br><br>
+
+		<div class='new_page'><input type='button' value='新增連結' onclick="new_page()" ></div><br><br>
+		<table border=1 align="center">
+		<tr class="form_title">
+		<td width="30" >No.</td>
+		<td width="450">連結列表</td>
+		<td width="100">操作選項</td>
+		</tr>
+		<% var a=0;
+		value.list.forEach(function(item) {
+		a+=1;%>
+		<tr>
+		<td ><%=a%></td>
+		<td ><%=item.title%></td>
+		<td><input type='button' value='編輯' onclick="edit('<%= item.ngID%>')" ><input type='button' value='刪除' onclick="delete_page('<%= item.ngID%>')" ></td>		
+		</tr>
+		<%})%>
+
+		</table>
+		
+		<!-- 彈跳視窗開始 -->
+		<div id="editorModal" class="modal fade modalstyle" aria-hidden="true" aria-labelledby="editorModalLabel" role="dialog" data-backdrop="static">
+			<div class="modal-dialog modal-lg">
+				<div id="modal-content"></div>
+			</div>
+		</div>
+		<!-- 彈跳視窗結束 -->
+		
+	</div>	
+</div>
+
+

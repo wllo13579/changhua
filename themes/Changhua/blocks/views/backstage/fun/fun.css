@@ -1,3 +1,4 @@
+
 ::-webkit-scrollbar {
   width: 26px;
   }
@@ -27,6 +28,7 @@
 	height: 960px;	
 	position:relative;
 	top:20px;
+	padding-left:20px;
 	border:1px solid #000;
 	border-radius:15px;
 
@@ -42,12 +44,15 @@
 	overflow-y:scroll;
 }
 
-#title{
-	padding-top:20px;
+.title{
+	padding-top:35px;
 	padding-left:50px;
-	width:200px;
+	width:400px;
 	height:70px;
+	background-image:url('../../Changhua/line.png');
+	background-position:35px 35px;
 	background-repeat:no-repeat;
+	font-size:18pt;
 }
 
  #content{
@@ -55,31 +60,57 @@
 	padding-left:30px;
 	padding-right:90px;
 
-}
-
-#url_title{
-	margin-top:40px;
-	margin-left:40px;
-	font-size:18pt;
-	color:#191970;
 } 
-#url{
-	background-image: url(../../Changhua/brush_g1.png);
-	background-repeat:no-repeat;
-	margin-top:5px;
-	margin-left:50px;
+
+.num
+{
+	width:50px;
+	text-align:center;
+	font-weight:bold;
 	font-size:16pt;
-	color:#458B00;
 }
 
-#people
+.banner
 {
-	width:150px;
-	height:102px;
-	background-image: url(../../Changhua/5_pic.png);
-	background-repeat:no-repeat;
+	width:520px;
+	height:200px; 
+}
+
+.title_banner
+{
+	padding-top:20px;
+	padding-left:20px;
+	padding-bottom:20px;
+}
+
+.new_page
+{
 	float:right;
-	position:relative;
-	right:60px;
-	top:200px;
+	padding-right:40px;
+}
+.modal-dialog
+{
+widht:800px;
+}
+
+.matter
+{
+background-color:#fff;
+}
+
+.form_title
+{
+	text-align:center;
+	font-size:12pt;
+	line-height:20pt;
+	font-weight:bold;
+}
+.import
+{
+	padding:5px 5px 5px 5px;
+	margin-left:40px;
+	margin-right:40px;
+	margin-bottom:20px;
+	font-size:12pt;
+	border:2px solid;
 }
