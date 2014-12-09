@@ -2,8 +2,9 @@
 <% if(bi.query.ngID==null){%>
 <div id="main">
 	<form name ="subscribe" id="subscribe_frm" action="#">
+	請輸入部落客類別：<input type="text" id="blog_name"><br>
 	請輸入連結名稱：<input type="text" id="url_name"><br>
-	請輸入連結網址：<input type="text" id="url_url"><br>
+	請輸入連結網址：<input type="text" id="url_url" value="http://"><br>	
 	<input type="button" value="儲存送出" onclick="check()">
 	</form>
 </div>
@@ -14,6 +15,7 @@ else{%>
    get_value('<%=bi.query.ngID%>')
 </script>
 	<form name ="subscribe" id="subscribe_frm" action="#">
+	請輸入部落客類別：<input type="text" id="blog_name"><br>
 	請輸入連結名稱：<input type="text" id="url_name"><br>
 	請輸入連結網址：<input type="text" id="url_url"><br>
 	<input type="button" value="儲存送出" onclick="update('<%=bi.query.ngID%>')">
