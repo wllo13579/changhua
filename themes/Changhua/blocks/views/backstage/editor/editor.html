@@ -5,10 +5,7 @@ console.log(ph.image); %>
 <div class="matter" style="padding:20px 50px 0 50px;">
     <div class="row"  sytle="padding:0px; margin:0px;">
     <!-- 左側內容開始 -->
-    <div>
-      <button class="icon-align-justify" id="menuBtn" onclick="<%=ctrl%>.showMenu();"></button>
-    </div>
-    <div class="col-md-3 col-xs-12 left-Con leftMenu" id="leftSide" style="padding: 0 5px;display:none">
+        <div class="col-md-3 col-xs-12 left-Con leftMenu" id="leftSide" style="padding: 0 5px;display:none">
         <div class="Box-group">
             <div class="Box-heading">
               <a class="Box-toggle" data-toggle="collapse" data-parent="#pgEditImgClps" href="#Box1"><%= ph.geoloc%></a>
@@ -69,7 +66,7 @@ console.log(ph.image); %>
         <form class="form-horizontal" role="form">
             <div class="row">
                 <!-- 左側開始 -->
-
+				<% if(bi.query.ngID!=null){%>
                 <div class="col-md-2 col-xs-2 col-Left leftMenu" id="iconField">
                     <div id="icon" title="<%= ph.icon%>" alt="<%= ph.icon%>" style="height:80px;">
                       <%= ph.icon%>
@@ -78,6 +75,17 @@ console.log(ph.image); %>
                         <button id="addIcon" type="button" class="btn btn-default btn-sm wc60 maT5" style="margin-bottom:-10px;"><%= ph.upload %></button>
                     </div>
                 </div>
+				<%}
+				else{%>
+				<div class="col-md-2 col-xs-2 col-Left leftMenu" id="iconField_non">
+                    <div id="icon" title="<%= ph.icon%>" alt="<%= ph.icon%>" style="height:80px;">
+                      <%= ph.icon%>
+                    </div>
+                    <div class="form-group">
+                        <button id="newIcon" type="button" class="btn btn-default btn-sm wc60 maT5" style="margin-bottom:-10px;"><%= ph.upload %></button>
+                    </div>
+                </div>
+				<%}%>
                 <!-- 左側結束 -->
 
                 <!-- 右側開始 -->

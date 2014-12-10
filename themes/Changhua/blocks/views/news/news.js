@@ -8,8 +8,11 @@ $(function(){
       var req = {url: 'changhua/changhua/news/list',post:postdata, hasCA: true};
     __.api(req, function(data) {
       if (data.errCode === 0) {	  
+	  
 		data.value.list.forEach(function(item) {
-			get_pic(item.ngID,item.title,item.mdTime,item.summary,item.iconURI);
+		var date = item.mdTime;
+		date = date.substring(0,10)+" "+date.substring(11,16);
+			get_pic(item.ngID,item.title,date,item.summary,item.iconURI);
 		})	
 				
       } else {
@@ -25,6 +28,7 @@ function get_pic(ngID,title,mdTime,summary,icon){
       var req = {url: 'changhua/changhua/news/view/'+ngID,post:postdata, hasCA: true};
     __.api(req, function(data) {
       if (data.errCode === 0) {	
+		
 		a='';
 		a+="<div class='item'><div class='item_cata'>"+summary+"</div><div class='item_content'><div class='item_pic'><img src='/images/"+ngID+"?path=";
 		a+=icon;

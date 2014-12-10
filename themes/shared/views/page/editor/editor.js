@@ -32,6 +32,7 @@ var sender = {
     ctrl.sel('#uploader').submit();
     });
     sender.newUploadBtn(ctrl.sel('#addIcon'), 1);
+	sender.newUploadBtn(ctrl.sel('#newIcon'), 1);
     sender.newUploadBtn(ctrl.sel('#addAtt'), 2);
     sender.newUploadBtn(ctrl.sel('#addPic'), 3);
   },
