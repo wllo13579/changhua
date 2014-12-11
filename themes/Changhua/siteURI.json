@@ -5,10 +5,12 @@
     },
     "/about": {
         "id": "no",
-        "service": "/changhua/changhua/view/63493"
+        "service": "/changhua/changhua/view/63493",
+        "title": "關於【彰化百寶村】官網"
     },
     "/news": {
-        "id": "no"
+        "id": "no",
+        "title": "最新消息"
     },
     "/product": {
         "id": "no",
@@ -16,7 +18,8 @@
     },
     "/food": {
         "id": "no",
-        "service": "/changhua/food/list"
+        "service": "/changhua/food/list",
+        "title": "特產美食"
     },
     "/food_buy": {
         "id": "yes",
@@ -26,7 +29,8 @@
     "/life": {
         "id": "no",
         "service": "/changhua/life/list",
-		"params":{"pri":"2"}
+		"params":{"pri":"2"},
+        "title": "創意生活"
     },
     "/life_buy": {
         "id": "yes",
@@ -36,7 +40,8 @@
     "/culture": {
         "id": "no",
         "service": "/changhua/culture/list",
-		"params":{"pri":"2"}
+		"params":{"pri":"2"},
+        "title": "文化工藝"
     },
     "/culture_buy": {
         "id": "yes",
@@ -44,16 +49,19 @@
 		"params":{"icon":"1"}
     },
     "/top_select": {
-        "id": "no"
+        "id": "no",
+        "title": "百寶主打星"
     },
     "/fun": {
         "id": "no",
         "service": "/changhua/fun/list",
-		"params":{"pri":"2"}
+		"params":{"pri":"2"},
+        "title": "放送頭"
     },
     "/scenery": {
         "id": "no",
-        "service": "/changhua/changhua/view/63891"
+        "service": "/changhua/changhua/view/63891",
+        "title": "走透透"
     },
     "/backstage": {
         "id": "no"
@@ -121,6 +129,6 @@
     },
     "/create": {
         "id": "no",
-		"service": "/changhua/culture/view/65593"
+		"service": "/changhua/topselect/listAux/68919"
     }
 }

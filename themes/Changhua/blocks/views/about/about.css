@@ -52,7 +52,7 @@
 	background-repeat:no-repeat;
 }
 
- #content{
+#content{
 	padding-top:10px;
 	padding-left:30px;
 	padding-right:90px;
@@ -90,4 +90,10 @@
 	width:10px;
 	height:40px;
 
+}
+.bottom img
+{
+width:660px;
+position:relative;
+bottom:250px;
 }

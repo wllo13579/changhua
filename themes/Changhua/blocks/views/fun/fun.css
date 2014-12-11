@@ -52,8 +52,9 @@
 
  #content{
 	padding-top:10px;
-	padding-left:30px;
+	padding-left:10px;
 	padding-right:90px;
+	margin-right:70px;
 
 }
 
@@ -80,6 +81,6 @@
 	background-repeat:no-repeat;
 	float:right;
 	position:relative;
-	right:60px;
+	right:10px;
 	top:200px;
 }
