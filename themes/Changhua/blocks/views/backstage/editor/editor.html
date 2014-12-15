@@ -54,12 +54,7 @@ console.log(ph.image); %>
             <input type="hidden" name="nType" value="3" >
             <input type="hidden" name="hasCA" value="1" >
             <input type="hidden" name="_loc" value="<%=bi.query.locale%>" >
-			<% if(bi.query.ngID!=null){%>
             <input type="file" name="aaa" multiple="multiple" class="form-control"><br>
-			<%}
-			else{%>
-			<input type="file" id="aaaa" name="aaaa" multiple="multiple" class="form-control"><br>
-			<%}%>
           </form>
         </div>
     </div>
@@ -83,12 +78,11 @@ console.log(ph.image); %>
 				<%}
 				else{%>
 				<div class="col-md-2 col-xs-2 col-Left leftMenu" id="iconField_non">
-                    <!-- <div id="icon" title="<%= ph.icon%>" alt="<%= ph.icon%>" style="height:80px;">
+                    <div id="icon" title="<%= ph.icon%>" alt="<%= ph.icon%>" style="height:80px;">
                       <%= ph.icon%>
-                    </div> -->
+                    </div>
                     <div class="form-group">
-						<div id="file_name" name="new_file_name">請選擇圖片</div>
-						<button id="file_new" type="button" class="btn btn-default btn-sm wc60 maT5" style="margin-bottom:-10px;"><%= ph.upload %></button>
+                        <button id="newIcon" type="button" class="btn btn-default btn-sm wc60 maT5" style="margin-bottom:-10px;"><%= ph.upload %></button>
                     </div>
                 </div>
 				<%}%>

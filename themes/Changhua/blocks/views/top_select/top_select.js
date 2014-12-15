@@ -9,11 +9,9 @@ $(function(){
     __.api(req, function(data) {
       if (data.errCode === 0) {	  
 		data.value.list.forEach(function(item) {
-			if(item.isPublic==1){
 			var date = item.mdTime;
 			date = date.substring(0,10)+" "+date.substring(11,16);
 			get_pic(item.ngID,item.title,date,item.summary,item.iconURI);
-			}
 		})
 				
       } else {
