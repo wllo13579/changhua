@@ -26,11 +26,15 @@ var sender = {
     } else if (geID !== 'undefined') {
       sender.settings['url'] += geID;
     }
-
+	
     ctrl.sel('#uploader').submit(sender.doUpload);
     ctrl.sel('input[name="aaa"]').change(function() {
     ctrl.sel('#uploader').submit();
     });
+	ctrl.sel('input[name="aaaa"]').change(function() {
+    document.getElementById('file_name').innerHTML=document.getElementById('aaaa').value;
+    });
+	sender.newUploadBtn2(ctrl.sel('#file_new'), 1);
     sender.newUploadBtn(ctrl.sel('#addIcon'), 1);
     sender.newUploadBtn(ctrl.sel('#addAtt'), 2);
     sender.newUploadBtn(ctrl.sel('#addPic'), 3);
@@ -39,6 +43,12 @@ var sender = {
     obj.click(function() {
       ctrl.sel('input[name="nType"]').val(type);
       ctrl.sel('input[name="aaa"]').click();
+    });
+  },
+  newUploadBtn2: function(obj, type) {
+    obj.click(function() {
+      ctrl.sel('input[name="nType"]').val(type);
+      ctrl.sel('input[name="aaaa"]').click();	  	  
     });
   },
   doUpload: function(e) {
@@ -55,6 +65,11 @@ ctrl.startup = function() {
   sender.init();
 };
 
+ctrl.startup = function() {
+  srvPath = getSrvPath();
+  ctrl.checkGeoInfo(ctrl.receiveAll);
+  sender.init();
+};
 ctrl.checkGeoInfo = function(callback) {
   var findGeInfo = {url:'/'+srvPath+'info/'+getGe(), post:{detail:1}},
       fromPage = (getNg() !== 'undefined'),
@@ -209,6 +224,23 @@ ctrl.delCnt = function(type) {
 ctrl.showMenu = function() {
   ctrl.sel('.Box-group').slideToggle('slow').promise().done(switchSize);
 }
+ctrl.add_new_pic = function(id){
+	sender.settings={
+    url: '/'+getCA()+'/'+srvPath + 'attach/'+id,
+    type: 'POST',
+    processData: false,
+    contentType: false,
+    success: function() {
+      alert('success');
+    },
+    error: function(err) {
+      alert(JSON.stringify(err));
+    }
+  };
+  
+	ctrl.sel('#uploader').submit();
+    
+};
 ctrl.save = function() {
   var pdata = collectData(),
       ngID = getNg(),
@@ -221,6 +253,7 @@ ctrl.save = function() {
         ctrl.callHandler("reqCloseEditor");
 		$('#exit').click();
       }else if (data.errCode === 0 && ngID === 'undefined') {
+		ctrl.add_new_pic(data.value.id);
         alert('新增成功！');
 		$('#exit').click();
 		window.location.reload();
@@ -232,7 +265,11 @@ ctrl.save = function() {
       }
     });
 };
-
+$( "#file_new" ).change ( function ()
+{
+	var pic_url = document.getElementById('file_new').value;
+	document.getElementById('file_name').innerHTML = pic_url;
+});
 function switchSize(allMenu) {
   if (!allMenu) {
     ctrl.sel('#menuBtn').hide();

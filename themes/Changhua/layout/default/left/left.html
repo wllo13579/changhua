@@ -1,91 +1,6 @@
-<script type='text/javascript'>
-window.onload = function cata_init()
-{
-	var pagename = window.location.pathname;
-	
-	var page_name = ['/about', '/news', '/product', '/food', '/life', '/culture', '/top_select', '/fun', '/scenery'];
-	var page_cata = new Array('m1', 'm2', 'm2', 'm3', 'm3', 'm3', 'm4', 'm5', 'm5');
-	var page_master_cata = new Array('cata1', 'cata2', 'cata2', 'cata3', 'cata3', 'cata3', 'cata4', 'cata5', 'cata5');
-	var a = page_name.indexOf(pagename);
-	var cata_now = page_cata[a];
-	var mastercata_cnow = page_master_cata[a];
-	
-	for(var key in page_name){
-		var temp;
-		var temp_back;
-		var o = document.getElementById( page_cata[key] );
-		var p = document.getElementById( page_master_cata[key] );
-		if(pagename == page_name[key] || page_cata[key] == cata_now)
-			{  
-				temp='inline';
-				temp_back='url(../../Changhua/cata/slider_hover.png)';
-				
-			}
-		else
-			{
-				temp='none';
-				temp_back='';
-			}
-		o.style.display = temp;
-		p.style.backgroundImage = temp_back;	
-	  }
-}
-function toggleMenu( id )
-{
-	var pages = new Array('m1', 'm2', 'm3','m4','m5');
-	
-  for(var key in pages){
-	var temp;
-	var display;
-	var o=document.getElementById( pages[key] );
-	display = o.style.display;
-	if(id == pages[key])
-		{  
-			temp=(display=='none') ? 'inline' : 'none';
-			
-		}
-	else
-		{
-			temp='none';
-		
-		}
-	
-	o.style.display = temp;  
-  }
-  
-
-}
-function bg( id )
-{
-	var pages = new Array('cata1', 'cata2', 'cata3','cata4','cata5');
-	
-	for(var key in pages){
-	var temp;
-	var display;
-	var dom = document.getElementById( pages[key] );
-	display = dom.style.backgroundImage;
-	if(id == pages[key])
-		{  
-			temp=(display=='') ? 'url("../../Changhua/cata/slider_hover.png")' : 'url("../../Changhua/cata/slider.png")';
-			
-		}
-	else
-		{
-			temp='';
-		
-		}
-	
-	dom.style.backgroundImage = temp;  
-  }
-
-
-}
-
-
-</script>
 
 <div id='menus'>
-	<div class="cata_master" id="cata1" onclick='toggleMenu("m1");bg("cata1");'><a href="javascript:void(0);"><img src ='../../Changhua/cata/icon1.png'><img src ='../../Changhua/cata/sub1.png'></a>
+	<div class="cata_master" id="cata1" onclick="<%=ctrl%>.toggleMenu('m1');<%=ctrl%>.bg('cata1');"><a href="javascript:void(0);"><img src ='../../Changhua/cata/icon1.png'><img src ='../../Changhua/cata/sub1.png'></a>
 	</div>
 	<div class="cata_sub" id="m1">
 		<div class="one" id="sub_cata">
@@ -95,7 +10,7 @@ function bg( id )
 		</div>		
 	</div>
 	
-	<div class="cata_master" id="cata2" onclick='toggleMenu("m2");bg("cata2");'><a href="javascript:void(0);"><img src ='../../Changhua/cata/icon2.png'><img src ='../../Changhua/cata/sub5.png'></a>
+	<div class="cata_master" id="cata2" onclick="<%=ctrl%>.toggleMenu('m2');<%=ctrl%>.bg('cata2');"><a href="javascript:void(0);"><img src ='../../Changhua/cata/icon2.png'><img src ='../../Changhua/cata/sub5.png'></a>
 	</div>
 	<div class="cata_sub" id="m2">
 		<div class="one" id="sub_cata">
@@ -104,7 +19,7 @@ function bg( id )
 	</div>
 	
 	
-	<div class="cata_master" id="cata3" onclick='toggleMenu("m3");bg("cata3")' ><a href="javascript:void(0);"><img src ='../../Changhua/cata/icon3.png'><img src ='../../Changhua/cata/sub3.png'></a>
+	<div class="cata_master" id="cata3" onclick="<%=ctrl%>.toggleMenu('m3');<%=ctrl%>.bg('cata3')"><a href="javascript:void(0);"><img src ='../../Changhua/cata/icon3.png'><img src ='../../Changhua/cata/sub3.png'></a>
 	</div>
 	<div class="cata_sub" id="m3">
 		<div class="three" id="sub_cata">
@@ -114,7 +29,7 @@ function bg( id )
 		</div>
 	</div>
 	
-	<div class="cata_master" id="cata4" onclick='toggleMenu("m4");bg("cata4")'><a href="javascript:void(0);"><img src ='../../Changhua/cata/icon4.png'><img src ='../../Changhua/cata/sub4.png'></a>
+	<div class="cata_master" id="cata4" onclick="<%=ctrl%>.toggleMenu('m4');<%=ctrl%>.bg('cata4')"><a href="javascript:void(0);"><img src ='../../Changhua/cata/icon4.png'><img src ='../../Changhua/cata/sub4.png'></a>
 	</div>
 	<div class="cata_sub" id="m4">
 		<div class="one" id="sub_cata">
@@ -122,7 +37,7 @@ function bg( id )
 		</div>
 	</div>
 	
-	<div class="cata_master" id="cata5" onclick='toggleMenu("m5");bg("cata5")'><a href="javascript:void(0);"><img src ='../../Changhua/cata/icon5.png'><img src ='../../Changhua/cata/sub2.png'></a>
+	<div class="cata_master" id="cata5" onclick="<%=ctrl%>.toggleMenu('m5');<%=ctrl%>.bg('cata5')"><a href="javascript:void(0);"><img src ='../../Changhua/cata/icon5.png'><img src ='../../Changhua/cata/sub2.png'></a>
 	</div>
 	<div class="cata_sub" id="m5">
 		<div class="two" id="sub_cata">
