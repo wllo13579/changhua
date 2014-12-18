@@ -1,4 +1,4 @@
-$(function(){
+ctrl.startup = function(){
 	  var a='';
 	  var postdata={
 	  'nType':'3'
@@ -7,7 +7,7 @@ $(function(){
     __.api(req, function(data) {
       if (data.errCode === 0) {	  
 		data.value.list.forEach(function(item) {
-			a+="<li><a href='index'><img src='/images/64407?path=";
+			a+="<li><a href='/'><img src='/images/64407?path=";
 			a+=item.dataURI;
 			a+="&maxw=930' ></a></li>";			
 		})
@@ -18,7 +18,7 @@ $(function(){
       }
     });
 	
-});
+};
 function banner_start(){
 	// 先取得必要的元素並用 jQuery 包裝
 	// 再來取得 $block 的高度及設定動畫時間
